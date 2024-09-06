@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Bookshop/style.css">
+   
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Diccionario</h1>
+                <p>Explorando los términos clave del comercio internacional</p>
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#agregarTerminoModal">Agregar nuevo término</a></li>
+                    <li><a class="dropdown-item" href="#">Editar término</a></li>
+                    <li><a class="dropdown-item" href="#">Eliminar término</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-principal">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Consulta de términos</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+
+        <div id="resultadoBusqueda">
+            <h4>Resultados de la búsqueda:</h4>
+            <p>Aquí se mostrarán los resultados de las búsquedas.</p>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Título 1</td>
+                    <td>Descripción del título 1</td>
+                </tr>
+                <tr>
+                    <td>Título 2</td>
+                    <td>Descripción del título 2</td>
+                </tr>
+                <tr>
+                    <td>Título 3</td>
+                    <td>Descripción del título 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Desarrollado por: Milton Guerrero </p>
+        <p>Correo: milton.ags17@gmail.com</p>
+        <p>Teléfono: +57 3204118053</p>
+        <p>&copy; 2024 Nombre de la Plataforma. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal agregarTermino-->
+    <div class="modal fade" id="agregarTerminoModal" tabindex="-1" aria-labelledby="agregarTerminoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="agregarTerminoModalLabel">Agregar Nuevo Término</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <form id="agregarTerminoForm">
+                <div class="mb-3">
+                  <label for="titulo" class="form-label">Título</label>
+                  <input type="text" class="form-control" id="titulo" required>
+                </div>
+                <div class="mb-3">
+                  <label for="descripcion" class="form-label">Descripción</label>
+                  <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="tipoTermino" class="form-label">Tipo de Término</label>
+                  <select class="form-select" id="tipoTermino" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="comun">Común</option>
+                    <option value="raro">Raro</option>
+                    <option value="pocoUsado">Poco usado</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" form="agregarTerminoForm" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Controller/scritp/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<div class="modal fade" id="agregarTerminoModal" tabindex="-1" aria-labelledby="agregarTerminoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="agregarTerminoModalLabel">Agregar Nuevo Término</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form id="agregarTerminoForm">
+          <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <input type="text" class="form-control" id="titulo" required>
+          </div>
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="tipoTermino" class="form-label">Tipo de Término</label>
+            <select class="form-select" id="tipoTermino" required>
+              <option value="">Selecciona una opción</option>
+              <option value="comun">Común</option>
+              <option value="raro">Raro</option>
+              <option value="pocoUsado">Poco usado</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" form="agregarTerminoForm" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
