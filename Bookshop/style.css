@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -127,4 +128,172 @@ footer p {
     .dropdown-toggle {
         font-size: 1.5rem;
     }
+=======
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-color: #E6F3FF; /* Color de respaldo */
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+    padding-bottom: 150px; /* Espacio para el footer */
+    width: 90%; /* Nuevo: hace que el body sea un 70% del ancho original */
+    margin: 0 auto; /* Nuevo: centra el body */
+    
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Assets/pexels-jvas71-13836074.jpg'); /* Reemplaza con la URL de tu imagen */
+    background-size: 100% auto; /* Ajusta este valor según sea necesario */
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7; /* Aumenté la opacidad para mejor visibilidad */
+    z-index: -1;
+}
+.header {
+    width: 93%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #FFF0F5; /* Lavanda muy claro */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    width: 100%;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+}
+.header-text {
+    text-align: left;
+}
+.dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.dropdown-menu {
+    background-color: #FFF0F5;
+}
+.header h1 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #4A4A4A;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.header p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #6A6A6A;
+}
+.contenedor-principal {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #FFFAFA; /* Blanco pastel (Snow) */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.navbar {
+    background-color: #C1E1C1; /* Verde pastel */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.table {
+    background-color: #FFE5B4; /* Naranja muy claro */
+}
+#resultadoBusqueda {
+    background-color: #FFF0F5; /* Lavanda muy claro */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #4A4A4A;
+}
+.dropdown-toggle:hover, .dropdown-toggle:focus {
+    color: #000;
+    background: none;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold; /* Añadido para poner el texto en negrita */
+}
+footer p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 576px) {
+    .header, .contenedor-principal, footer {
+        width: 100%;
+        border-radius: 0;
+    }
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    body {
+        padding-bottom: 200px;
+    }
+    .dropdown {
+        top: 10px;
+        right: 10px;
+    }
+    .dropdown-toggle {
+        font-size: 1.5rem;
+    }
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 20px;
+}
+
+.logo-img {
+    max-height: 100px; /* Ajusta esto según el tamaño deseado */
+    width: auto;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+.contenedor-principal {
+    /* background-color: white; */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sidebar {
+    /* background-color: white; */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+>>>>>>> a57efec (se hicieron muchos cambios)
 }
